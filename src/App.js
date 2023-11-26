@@ -1,23 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import CardContent from "./components/CardContent";
+import Footer from "./layout/Footer";
+import Header from "./layout/Header";
+// import CardContent from "./components/CardContent";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className="container px-lg-5">
+        {" "}
+        <div className=" row  gx-lg-5">
+          <CardContent
+            icon=" fa-bars"
+            title="Fresh new layout"
+            description="With Bootstrap 5, we've created a fresh new layout for this template!"
+          />
+          <CardContent
+            icon=" fa-bars"
+            title="Fresh new layout"
+            description="With Bootstrap 5, we've created a fresh new layout for this template!"
+          />
+          <CardContent
+            icon=" fa-bars"
+            title="Fresh new layout"
+            description="With Bootstrap 5, we've created a fresh new layout for this template!"
+          />
+          <CardContent
+            icon=" fa-bars"
+            title="Fresh new layout"
+            description="With Bootstrap 5, we've created a fresh new layout for this template!"
+          />
+          <CardContent
+            icon=" fa-bars"
+            title="Fresh new layout"
+            description="With Bootstrap 5, we've created a fresh new layout for this template!"
+          />
+          <CardContent
+            icon=" fa-bars"
+            title="Fresh new layout"
+            description="With Bootstrap 5, we've created a fresh new layout for this template!"
+          />
+        </div>
+      </div>
+
+      <Footer />
     </div>
   );
 }
